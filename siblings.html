@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.ian{
+  background-image: url(https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/10171659_10152784133261405_9021375736409187698_n.jpg?oh=40f54e2d40392dbe7c6bf04983f58752&oe=5907B486);
+}
+.elly{
+  background-image: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/539762_10151844899668726_1346596904_n.jpg?oh=7be5f1beb20d15704be165f42585cf0f&oe=590EFB0F");
+}
+.alex{
+  background-image: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/12743570_448813121984961_7321758869414356653_n.jpg?oh=7776ea077b67d6d5450b0f25d3df2dfb&oe=59042321");
+}
+.sovra {
+  background-image: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15253515_10154774686069469_7534489428194862480_n.jpg?oh=e8019481235e7b89e5d4ff3a14eccd14&oe=5940FAFC");
+}
+  
+.freya {
+  background-image: url("https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/16427730_1344524522272171_9157400695681846411_n.jpg?oh=0b40091004f5ed745f3ab84a1b0adf69&oe=5906EA94");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Whitcroft Progeny</h1>
+<h2>five mistakes</h2>
+<div class="ian">
+  <p> Ian <span class="price">$14</span><br />
+  <small>have you heard he's on 57 pounds an hour?
+  has like 3 pipes but never uses them.
+  slapped sovra in the face with a fish once.
+  conditions his beard. </small></p>
+</div>
+
+<div class="elly">
+  <p>Elly <span class="price">$22</span><br />
+  <small>*SUPER IMPORTANT POST EVERYONE READ*. 'you're in love with me aren't you'. (worries constantly about money) books last minute flight across the world. steals clothes approximately every 3 minutes</small></p>
+</div>
+  
+<div class="alex">
+  <p>Alex <span class="price">$8</span><br />
+  <small>'I was kidding!!!!!' 'you guys are dicks'. is a speccy nerd. 'what's for dinner'</small></p>
+</div>
+
+<div class="sovra">
+  <p>Sovra <span class="price">$7</span><br />
+  <small>*tries to help*. ruins everything. if she was pulling santas sleigh she's be called rudolph the brown nosed raindeer. 'oh that's interesting name i've never heard that one before' </small> </p>
+  </div>
+
+<div class="freya">
+  <p>Freya <span class="price">$2.50</span><br />
+  <small>I just don't want to'. probably adopted. 'No, for the last time I haven't walked Luna today'. (is a straight 10) 'I look so ugly!!!!'</small></p>
+</div>
+
+
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
